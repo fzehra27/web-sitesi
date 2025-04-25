@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İnsansız Denizaltı Projemiz – Başlangıç</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #004b8d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0077b6;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .content img, .content video {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .comment-section {
+      margin-top: 50px;
+    }
+
+    .comment-section form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .comment-section textarea {
+      padding: 10px;
+      font-size: 1em;
+      margin-bottom: 10px;
+      resize: vertical;
+    }
+
+    .comment-section input[type="text"],
+    .comment-section input[type="email"] {
+      padding: 10px;
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    .comment-section button {
+      background-color: #0077b6;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #004b8d;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>İnsansız Denizaltı Projemiz – Başlangıç</h1>
+    <p>01 Nisan 2025</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Anasayfa</a>
+    <a href="hakkimda.html">Hakkımda</a>
+    <a href="gonderiler.html">Gönderiler</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+
+  <div class="container content">
+    <p>Bu yazıda insansız denizaltı projemizin ilk aşamalarını anlatmak istiyorum. Ekip olarak parça seçimi, tasarım ve planlama sürecine odaklandık.</p>
+
+    <img src="denizalti-proje.jpg" alt="Denizaltı projesi resmi" />
+
+    <p>İlk olarak motor ve kontrol kartlarını seçtik. Ardından su geçirmezlik testlerine başladık. Aşağıdaki videoda ilk deneme çalıştırmamızı görebilirsiniz:</p>
+
+    <video controls>
+      <source src="deneme-video.mp4" type="video/mp4" />
+      Tarayıcınız video etiketini desteklemiyor.
+    </video>
+
+    <p>İlerleyen gönderilerde devre şemaları, kontrol yazılımı ve sensör entegrasyonlarını da paylaşacağım. Takipte kalın!</p>
+  </div>
+
+  <div class="container comment-section">
+    <h2>Yorum Yap</h2>
+    <form>
+      <input type="text" placeholder="Adınız" required />
+      <input type="email" placeholder="E-posta adresiniz" required />
+      <textarea rows="5" placeholder="Yorumunuz..." required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Zehra tarafından hazırlanmıştır.</p>
+  </footer>
+
+</body>
+</html>

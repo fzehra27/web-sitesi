@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gönderiler</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #004b8d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0077b6;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .post-link {
+      border-bottom: 1px solid #ccc;
+      padding: 20px 0;
+    }
+
+    .post-link h2 {
+      margin-bottom: 5px;
+    }
+
+    .post-link p {
+      margin: 0;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #004b8d;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Blog Gönderileri</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Anasayfa</a>
+    <a href="hakkimda.html">Hakkımda</a>
+    <a href="gonderiler.html">Gönderiler</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+
+  <div class="container">
+    <div class="post-link">
+      <h2><a href="gonderi1.html">İnsansız Denizaltı Projemiz – Başlangıç</a></h2>
+      <p>01 Nisan 2025</p>
+      <p>Denizaltı yapım sürecimizin ilk adımlarını anlattım.</p>
+    </div>
+
+    <div class="post-link">
+      <h2><a href="gonderi2.html">Unity'de Kamera Kontrolü – PUBG Tarzı</a></h2>
+      <p>15 Mart 2025</p>
+      <p>Unity'de third-person kamera sistemi nasıl yapılır? Adım adım rehber.</p>
+    </div>
+
+    <!-- Yeni gönderiler ekledikçe buraya aynı yapıda yeni div eklenebilir -->
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Zehra tarafından hazırlanmıştır.</p>
+  </footer>
+
+</body>
+</html>
