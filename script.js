@@ -26,4 +26,9 @@ const images = [
   
   setInterval(nextImage, 4000);
   showImage(current);
+
   
+  const yilElementi = document.getElementById("yil");
+  const suAnkiYil = new Date().getFullYear();
+  yilElementi.textContent = suAnkiYil;
+    
